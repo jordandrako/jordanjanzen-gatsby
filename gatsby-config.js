@@ -1,12 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Jordan Janzen`,
+    description: `Jordan Janzen's portfolio and resume.`,
+    author: `Jordan Janzen`,
+    siteUrl: `https://jordanjanzen.com`,
   },
   plugins: [
     `gatsby-plugin-typescript`,
     `gatsby-plugin-tslint`,
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -20,8 +22,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `jordan-janzen-portfolio`,
+        short_name: `jordan-janzen`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
