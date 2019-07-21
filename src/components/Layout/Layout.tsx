@@ -8,8 +8,8 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 
-import Header from './header';
-import './layout.css';
+import Header from '../Header';
+import './Layout.scss';
 
 interface ILayoutProps {
   children?: React.ReactNode;
