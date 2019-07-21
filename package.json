@@ -1,9 +1,25 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "jordanjanzen.com",
+  "homepage": "https://jordanjanzen.com",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "version": "2.0.0",
+  "author": "Jordan Janzen <@jordandrako>",
+  "scripts": {
+    "_check": "node scripts/check.js",
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "yarn develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "type-check": "tsc --noEmit",
+    "lint:ts": "tslint -p tsconfig.json --fix",
+    "lint": "yarn lint:ts",
+    "check:env": "yarn _check --env",
+    "check:branch": "yarn _check --branch",
+    "check": "yarn _check --all"
+  },
   "dependencies": {
     "gatsby": "^2.13.31",
     "gatsby-image": "^2.2.6",
@@ -11,28 +27,47 @@
     "gatsby-plugin-offline": "^2.2.4",
     "gatsby-plugin-react-helmet": "^3.1.2",
     "gatsby-plugin-sharp": "^2.2.8",
+    "gatsby-plugin-tslint": "^0.0.2",
+    "gatsby-plugin-typescript": "^2.1.2",
     "gatsby-source-filesystem": "^2.1.5",
     "gatsby-transformer-sharp": "^2.2.4",
+    "polished": "^3.4.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1"
+    "react-dropzone": "^10.1.5",
+    "react-helmet": "^5.2.1",
+    "sha1": "^1.1.1",
+    "styled-components": "^4.3.2",
+    "styled-normalize": "^8.0.6",
+    "superagent": "^5.1.0"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "@types/jest": "^24.0.15",
+    "@types/node": "^12.6.8",
+    "@types/react": "^16.8.23",
+    "@types/react-dom": "^16.8.4",
+    "@types/react-dropzone": "^5.1.0",
+    "@types/react-helmet": "^5.0.8",
+    "@types/sha1": "^1.1.2",
+    "@types/superagent": "^4.1.3",
+    "babel-core": "^6.26.3",
+    "cross-env": "^5.2.0",
+    "git-branch": "^2.0.1",
+    "prettier": "^1.18.2",
+    "prettier-tslint": "^0.4.2",
+    "tslint": "^5.18.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-loader": "^3.5.4",
+    "tslint-plugin-prettier": "^2.0.1",
+    "tslint-react": "^4.0.0",
+    "typescript": "^3.5.3"
   },
   "keywords": [
     "gatsby"
   ],
   "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
