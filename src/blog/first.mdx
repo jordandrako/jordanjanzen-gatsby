@@ -1,0 +1,17 @@
+---
+title: First post
+author: Jordan Janzen
+path: /first
+---
+
+import SEO from "../components/SEO"
+
+<SEO title={props.pageContext.frontmatter.title} />
+
+<h1>{props.pageContext.frontmatter.title}</h1>
+
+<p>By {props.pageContext.frontmatter.author}</p>
+
+## It's pretty cool dude. Just place an .mdx file in the pages directory.
+
+How about a little SEO? Just use the SEO component to set the page title.
